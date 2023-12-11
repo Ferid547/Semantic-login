@@ -1,69 +1,96 @@
-body {
-    background-color: rgb(215, 215, 215);
-}
-#img {
-    position: absolute;
-    left: 593px;
-    top: 198px;
-    font-size: 32px;
-    width: 68px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  text-decoration: none;
 }
 
-.head {
-    color: rgba(28, 204, 186, 0.86);
-    position: absolute;
-    left: 685px;
-    top: 196px;
-    font-size: 24px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.form {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: #dadada;
 }
-
-
-.login {
-    border: 1px;
-    border-radius: 5px;
-    background-color: white;
-    position: absolute;
-    width: 433px;
-    height: 149px;
-    left: 566px;
-    top: 296px;
+.form .head {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  gap: 20px;
+  justify-content: center;
 }
-
-#text {
-    width: 390px;
-    padding: 5px;
-    margin: 15px;
+.form .head img {
+  width: 60px;
 }
-
-#password {
-    width: 390px;
-    padding: 5px;
-    margin-left: 15px;
+.form .head h2 {
+  color: #35bdb2;
 }
-
-#button {
-    color: white;
-    background-color: rgb(28, 204, 186, 0.86);
-    position: absolute;
-    margin-left: 10px;
-    width: 406px;
-    height: 40px;
-    border: solid;
-    border-radius: 5px;
-    left: 4px;
-    bottom: 10px;
+.form .inputs {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 22px;
+  gap: 17px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 1px 0px 15px -10px;
 }
-
-.sign {
-    border: 1px;
-    background-color: white;
-    position: absolute;
-    left: 566px;
-    top: 458px;
-    width: 434px;
-    text-align: center;
-    border-radius: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-
+.form .inputs #user {
+  position: relative;
 }
+.form .inputs #user i {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  color: #909090;
+}
+.form .inputs #lock {
+  position: relative;
+}
+.form .inputs #lock i {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  color: #909090;
+}
+.form .inputs input {
+  width: 400px;
+  height: 40px;
+  padding-left: 40px;
+  border-radius: 4px;
+  border: 1px solid #dededf;
+}
+.form .inputs input:focus-visible {
+  border: none;
+  outline: 1px solid #85b7d9;
+}
+.form .inputs input::-moz-placeholder {
+  color: #c7c7c7;
+}
+.form .inputs input::placeholder {
+  color: #c7c7c7;
+}
+.form .inputs button {
+  color: white;
+  height: 40px;
+  border: none;
+  background: #35bdb2;
+  border-radius: 4px;
+  font-size: 17px;
+}
+.form .inputs button:hover {
+  background-color: #009c95;
+}
+.form .sign {
+  background: white;
+  margin-top: 14px;
+  padding: 14px 40px 14px 40px;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+}
+.form .sign a {
+  color: #4183c4;
+}/*# sourceMappingURL=style.css.map */
